@@ -24,6 +24,9 @@
     "loader",
     "postcss"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Joel Denning",
   "license": "MIT",
   "bugs": {
