@@ -8,9 +8,11 @@ A [nodejs loader](https://nodejs.org/dist/latest-v13.x/docs/api/esm.html#esm_exp
 npm install --save @node-loader/postcss
 ```
 
+Node 16.12 changed the hooks used in NodeJS loaders. If using Node<16.12, use `@node-loader/postcss@1`. Otherwise, use `@node-loader/postcss@latest`.
+
 ## Usage
 
-Create a `postcss.config.js` file in your current working directory.  Now run node with the `--loader` (or `--experimental-loader` for older NodeJS version) flag:
+Create a `postcss.config.js` file in your current working directory. Now run node with the `--loader` (or `--experimental-loader` for older NodeJS version) flag:
 
 ```sh
 node --loader @node-loader/postcss file.js
@@ -19,9 +21,12 @@ node --loader @node-loader/postcss file.js
 Now you can import CSS files as ES modules in your NodeJS project:
 
 ```js
-import cssString from './main.css';
+import cssString from "./main.css";
 
-console.log("After PostCSS processing, the main.css file content is", cssString);
+console.log(
+  "After PostCSS processing, the main.css file content is",
+  cssString
+);
 ```
 
 ## Configuration
