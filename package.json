@@ -7,6 +7,7 @@
   "scripts": {
     "test": "node --loader ./lib/node-loader-postcss.js ./test/run-tests.js",
     "lint": "eslint lib",
+    "check-format": "prettier --check .",
     "prepare": "husky install"
   },
   "files": [
