@@ -1,6 +1,6 @@
 {
   "name": "@node-loader/postcss",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A NodeJS loader for processing PostCSS ",
   "type": "module",
   "main": "lib/node-loader-postcss.js",
